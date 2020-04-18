@@ -20,6 +20,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
+
+    <script type="text/javascript" src="moment.js"></script>
   </head>
 
   <body>
@@ -27,9 +29,113 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <div id="momenttd"></div>
+        <script type="text/javascript">
+            var currentDate = moment().format("dddd, MMM Do YYYY");
+            var x = document.getElementById("momenttd");
+            x.innerHTML = currentDate;
+        </script>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+        <div class="row">
+            <div class="col">
+              9am
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              10am
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              11am
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              12pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              1pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              2pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              3pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              4pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              5pm
+            </div>
+            <div class="col-6">
+              2 of 3 (wider)
+            </div>
+            <div class="saveBtn">
+              save
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

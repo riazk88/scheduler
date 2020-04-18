@@ -1,0 +1,1 @@
+moment().format('dddd MMM DD YYYY')
